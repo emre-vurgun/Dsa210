@@ -48,10 +48,10 @@ The following hypotheses were evaluated using **Pearson Correlation** and **Welc
 
 | Hypothesis | Description | Result |
 | :--- | :--- | :--- |
-| **H1** | Higher GDP per Capita correlates with higher EV sales. | **Fail to Reject Null** (r = 0.916, p < 0.001) |
-| **H2** | Increased Google Search volume correlates with higher sales. | **Fail to Reject Null** (r = 0.734, p < 0.001) |
-| **H3** | High oil prices drive EV sales. | **Rejected** (No significant linear relationship, p = 0.59) |
-| **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Fail to Reject Null** (Sales significantly higher post-tariff, p < 0.001) |
+| **H1** | Higher GDP per Capita correlates with higher EV sales. | **Confirmed** (Reject Null, r = 0.916, p < 0.001) |
+| **H2** | Increased Google Search volume correlates with higher sales. | **Confirmed** (Reject Null, r = 0.734, p < 0.001) |
+| **H3** | High oil prices drive EV sales. | **Rejected** (Fail to Reject Null, p = 0.59) |
+| **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Confirmed** (Reject Null, Sales significantly higher post-tariff, p < 0.001) |
 
 ## Machine Learning Models
 Three regression models were implemented to predict normalized US EV sales:
