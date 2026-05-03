@@ -26,7 +26,7 @@ This project integrates multiple heterogeneous datasets covering **2010–2026**
 * **Usage:** A binary dummy variable representing the 100% tariff placed on Chinese EV imports (Active = 1 after May 2024).
 
 ## Detailed Analysis & Code
-All data collection, exploratory data analysis, hypothesis testing, and machine learning models are fully documented and reproducible in the main Jupyter Notebook.
+All data collection, exploratory data analysis, hypothesis testing, and machine learning models are fully documented.
 
 ### Data Analysis Pipeline
 **1. Data Preparation**
@@ -51,10 +51,7 @@ The following hypotheses were evaluated using **Pearson Correlation** and **Welc
 | **H3** | High oil prices drive EV sales. | **Rejected** (No significant linear relationship, p = 0.59) |
 | **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Fail to Reject** (Sales significantly higher post-tariff, p < 0.001) |
 
-### Detailed Analysis & Code
-To keep the analysis modular and easy to read, the project is organized into folders. The final machine learning code, along with its required datasets, can be found here:
-
-### Machine Learning Models
+## Machine Learning Models
 Three regression models were implemented to predict normalized US EV sales:
 
 ### Model Setup
