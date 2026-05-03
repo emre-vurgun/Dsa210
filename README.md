@@ -1,4 +1,4 @@
-#### Data Sources
+## Data Sources
 This project integrates multiple heterogeneous datasets covering **2010–2026**, aligned temporally into a monthly format:
 
 **1. US EV Sales (BEV + PHEV)**
@@ -25,10 +25,10 @@ This project integrates multiple heterogeneous datasets covering **2010–2026**
 * **Source:** Derived from US Policy Announcements
 * **Usage:** A binary dummy variable representing the 100% tariff placed on Chinese EV imports (Active = 1 after May 2024).
 
-#### Detailed Analysis & Code
+## Detailed Analysis & Code
 All data collection, exploratory data analysis, hypothesis testing, and machine learning models are fully documented and reproducible in the main Jupyter Notebook.
 
-## Data Analysis Pipeline
+### Data Analysis Pipeline
 **1. Data Preparation**
 * Formatted various date strings into standardized `datetime` objects.
 * Merged four disparate data sources into a single temporal DataFrame.
@@ -41,7 +41,7 @@ EDA focused on understanding temporal trends and visual correlations:
 * Generated Pearson correlation heatmaps.
 * Constructed boxplots to visually evaluate EV sales distributions before and after the May 2024 tariffs.
 
-#### Hypothesis Testing
+## Hypothesis Testing
 The following hypotheses were evaluated using **Pearson Correlation** and **Welch's Independent T-Tests** (α = 0.05):
 
 | Hypothesis | Description | Result |
@@ -51,10 +51,10 @@ The following hypotheses were evaluated using **Pearson Correlation** and **Welc
 | **H3** | High oil prices drive EV sales. | **Rejected** (No significant linear relationship, p = 0.59) |
 | **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Fail to Reject** (Sales significantly higher post-tariff, p < 0.001) |
 
-## Detailed Analysis & Code
+### Detailed Analysis & Code
 To keep the analysis modular and easy to read, the project is organized into folders. The final machine learning code, along with its required datasets, can be found here:
 
-#### Machine Learning Models
+### Machine Learning Models
 Three regression models were implemented to predict normalized US EV sales:
 
 ### Model Setup
