@@ -40,3 +40,13 @@ EDA focused on understanding temporal trends and visual correlations:
 * Overlaid time-series plots to compare normalized sales, oil prices, and searches.
 * Generated Pearson correlation heatmaps.
 * Constructed boxplots to visually evaluate EV sales distributions before and after the May 2024 tariffs.
+
+## Hypothesis Testing
+The following hypotheses were evaluated using **Pearson Correlation** and **Welch's Independent T-Tests** (α = 0.05):
+
+| Hypothesis | Description | Result |
+| :--- | :--- | :--- |
+| **H1** | Higher GDP per Capita correlates with higher EV sales. | **Confirmed** (r = 0.916, p < 0.001) |
+| **H2** | Increased Google Search volume correlates with higher sales. | **Confirmed** (r = 0.734, p < 0.001) |
+| **H3** | High oil prices drive EV sales. | **Rejected** (No significant linear relationship, p = 0.59) |
+| **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Confirmed** (Sales significantly higher post-tariff, p < 0.001) |
