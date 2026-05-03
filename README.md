@@ -63,7 +63,7 @@ Three regression models were implemented to predict normalized US EV sales:
 | :--- | :--- | :--- |
 | **Linear Regression** | 0.1082 | -5.1147 |
 | **k-Nearest Neighbors (k=5)** | 0.0996 | -4.6290 |
-| **Decision Tree (Depth=4)** | **0.0386** | **-1.1818** |
+| **Decision Tree (Depth=4)** | 0.0386 | -1.1818 |
 
 ### Results & Interpretation
 * **Finding:** The **Decision Tree** significantly outperformed the other models, achieving the lowest Mean Squared Error (0.0386). 
