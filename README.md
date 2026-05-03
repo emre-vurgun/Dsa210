@@ -75,13 +75,13 @@ US_EV_Sales_Analysis/
 ├── Data collection, EDA and HypothesisTests/          # EDA & Stats
 │   ├── ev_sales.csv                                   # Base EV sales dataset
 │   ├── multiTimeline.csv                              # Base Google Trends dataset
-│   └── Data_collection_EDA_HypothesisTests.ipynb      # Main Analysis Notebook
+│   └── Data_collection_EDA_HypothesisTests.ipynb      # Main Analysis
 ├── Machine Learning Modeling/                         # ML Phase Folder
 │   ├── ev_sales.csv                                   # Base EV sales dataset
 │   ├── multiTimeline.csv                              # Base Google Trends dataset
-│   └── Machine_Learning_Modeling.ipynb                # ML Regression Models Notebook
+│   └── Machine_Learning_Modeling.ipynb                # ML Regression Models
 ├── Raw data/                                          
 │   └── Total Sales for Website_February 2026.pdf      # EV sales data in US
 ├── DSA210 Proposal Document.pdf                       # Project proposal
-├── requirements.txt                                   # Project dependencies
-└── README.md                                          # Project documentation
+├── README.md                                          
+└── requirements.txt                                   # Project dependencies                                         
