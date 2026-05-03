@@ -1,4 +1,4 @@
-# ANALYSIS OF EV SALES IN US
+# ANALYSIS OF EV SALES IN THE US
 
 ## Data Sources
 This project integrates multiple heterogeneous datasets covering **2010–2026**, aligned temporally into a monthly format:
