@@ -70,7 +70,7 @@ Three regression models were implemented to predict normalized US EV sales:
 * **The "Negative R²" Phenomenon:** All models yielded a negative R². Because we used a chronological train/test split, the models were trained on pre-2022 data. The negative R² perfectly illustrates that the EV market experienced a massive, unprecedented structural shift in the testing period (post-2022) that could not be linearly predicted using only historical pre-2022 trends. The past no longer perfectly predicts the future in the rapidly evolving EV sector!
 
 ## Project Structure
-
+```text
 US_EV_Sales_Analysis/
 ├── Data collection, EDA and HypothesisTests/          # EDA & Stats
 │   ├── ev_sales.csv                                   # Base EV sales dataset
