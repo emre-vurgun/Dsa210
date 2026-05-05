@@ -57,8 +57,8 @@ The following hypotheses were evaluated using **Pearson Correlation** and **Welc
 Four regression models were implemented to predict US EV sales: Linear Regression, k-Nearest Neighbors (kNN), Random Forest, and Decision Tree.
 
 ### Model Setup
-* **Split:** Chronological 80/20 split (Training: 2010–2022 | Testing: 2023–2026).
-* **Evaluation Metrics:** Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) were used to assess performance in real-world vehicle units.
+* **Split:** Chronological split (Training: 2010–2024 | Testing: 2024–2026).
+* **Evaluation Metrics:** Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), R² were used to assess performance in real-world vehicle units.
 
 ### Results
 | Model              | MSE       | MAE       | R²   |
@@ -70,9 +70,15 @@ Four regression models were implemented to predict US EV sales: Linear Regressio
 
 
 ### Results & Interpretation
-* **The "Negative R²" Phenomenon:** All models yielded negative R² scores. This indicates that the models performed worse than a simple horizontal line based on training averages. This is a direct result of the unprecedented "exponential boom" in EV sales occurring entirely within the testing period.
-* **Extrapolation Limits:** The analysis reveals that tree-based models (Decision Tree/Random Forest) cannot extrapolate; they are mathematically unable to predict values higher than those seen in the training data (pre-2023).
-* **Paradigm Shift:** The failure of these models suggests a structural shift in the US market. The drivers of early adoption (GDP, Search Trends) are no longer sufficient to explain the current mass-market surge, which is likely driven by external "X-factors" like the Inflation Reduction Act subsidies and lower battery costs.
+* **Overall Performance is Weak:** All models produced negative R² scores, meaning none were able to explain the variance in EV sales better than a simple baseline prediction.
+* **Best Model (Relatively):** kNN achieved the lowest error values and the highest (least negative) R² score. However, its performance is still insufficient for reliable forecasting.
+* **Tree-Based Models Struggle:** Decision Tree and Random Forest models performed significantly worse, indicating poor generalization. This is consistent with their tendency to overfit training data and their inability to extrapolate beyond observed values.
+* **Failure to Capture Growth Dynamics:** All models produced overly smooth predictions and failed to follow the sharp increases and fluctuations in EV sales visible in the test period.
+* **Extrapolation Limitation:** Tree-based methods are inherently limited in predicting values outside the training range. Since EV sales surged after 2022, these models systematically underestimated future values.
+* **Structural Break in the Data:** The results suggest a regime change in the EV market. The rapid growth observed in the test period is not well explained by historical patterns alone, indicating the influence of external factors such as policy incentives, technological advancements, and market expansion.
+
+###Key Takeaway
+Traditional regression and tree-based models, when applied without time-aware structure or advanced feature engineering, are not sufficient to model rapidly evolving markets like EV adoption. Capturing such dynamics likely requires time-series approaches or models capable of handling trend shifts and non-stationarity.
 
 ## Project Structure
 ```text
