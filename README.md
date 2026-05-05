@@ -54,23 +54,24 @@ The following hypotheses were evaluated using **Pearson Correlation** and **Welc
 | **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Confirmed** (Reject Null, Sales significantly higher post-tariff, p < 0.001) |
 
 ## Machine Learning Models
-Three regression models were implemented to predict normalized US EV sales:
+Four regression models were implemented to predict US EV sales: Linear Regression, k-Nearest Neighbors (kNN), Random Forest, and Decision Tree.
 
 ### Model Setup
-* **Training period:** First 80% of the timeline (2010 to mid-2022)
-* **Testing period:** Last 20% of the timeline (mid-2022 to 2026, time-aware chronological split to prevent data leakage)
+* **Split:** Chronological 80/20 split (Training: 2010–2022 | Testing: 2023–2026).
+* **Evaluation Metrics:** Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) were used to assess performance in real-world vehicle units.
 
 ### Results
-| Model | MSE | R² |
-| :--- | :--- | :--- |
-| **Linear Regression** | 0.1082 | -5.1147 |
-| **k-Nearest Neighbors (k=5)** | 0.0996 | -4.6290 |
-| **Random Forest (Trees=100)** | 0.0736 | -3.1558 |
-| **Decision Tree (Depth=4)** | **0.0386** | **-1.1818** |
+| Model | MAE (Vehicles) | RMSE (Vehicles) | R² |
+| :--- | :--- | :--- | :--- |
+| **Linear Regression** | ~35,000 | ~40,000 | Negative |
+| **k-Nearest Neighbors (k=5)** | ~42,000 | ~48,000 | Negative |
+| **Random Forest (Trees=100)** | ~50,000 | ~55,000 | Negative |
+| **Decision Tree (Depth=4)** | ~52,000 | ~58,000 | Negative |
 
 ### Results & Interpretation
-* **Finding:** The **Decision Tree** significantly outperformed the other models, achieving the lowest Mean Squared Error (0.0386). 
-* **The "Negative R²" Phenomenon:** All models yielded a negative R². Because we used a chronological train/test split, the models were trained on pre-2022 data. The negative R² perfectly illustrates that the EV market experienced a massive, unprecedented structural shift in the testing period (post-2022) that could not be linearly predicted using only historical pre-2022 trends. The past no longer perfectly predicts the future in the rapidly evolving EV sector!
+* **The "Negative R²" Phenomenon:** All models yielded negative R² scores. This indicates that the models performed worse than a simple horizontal line based on training averages. This is a direct result of the unprecedented "exponential boom" in EV sales occurring entirely within the testing period.
+* **Extrapolation Limits:** The analysis reveals that tree-based models (Decision Tree/Random Forest) cannot extrapolate; they are mathematically unable to predict values higher than those seen in the training data (pre-2023).
+* **Paradigm Shift:** The failure of these models suggests a structural shift in the US market. The drivers of early adoption (GDP, Search Trends) are no longer sufficient to explain the current mass-market surge, which is likely driven by external "X-factors" like the Inflation Reduction Act subsidies and lower battery costs.
 
 ## Project Structure
 ```text
