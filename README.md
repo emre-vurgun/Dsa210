@@ -61,12 +61,13 @@ Four regression models were implemented to predict US EV sales: Linear Regressio
 * **Evaluation Metrics:** Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) were used to assess performance in real-world vehicle units.
 
 ### Results
-| Model | MAE (Vehicles) | RMSE (Vehicles) | R² |
-| :--- | :--- | :--- | :--- |
-| **Linear Regression** | ~35,000 | ~40,000 | Negative |
-| **k-Nearest Neighbors (k=5)** | ~42,000 | ~48,000 | Negative |
-| **Random Forest (Trees=100)** | ~50,000 | ~55,000 | Negative |
-| **Decision Tree (Depth=4)** | ~52,000 | ~58,000 | Negative |
+| Model              | MSE       | MAE       | R²   |
+|--------------------|-----------|-----------|-------|
+| kNN                | 26558.70  | 20892.18  | -0.06 |
+| Random Forest      | 32396.05  | 23559.83  | -0.58 |
+| Linear Regression  | 30803.15  | 26704.05  | -0.43 |
+| Decision Tree      | 41069.50  | 30568.27  | -1.54 |
+
 
 ### Results & Interpretation
 * **The "Negative R²" Phenomenon:** All models yielded negative R² scores. This indicates that the models performed worse than a simple horizontal line based on training averages. This is a direct result of the unprecedented "exponential boom" in EV sales occurring entirely within the testing period.
