@@ -60,6 +60,10 @@ Evaluated using **Pearson Correlation** and **Welch's Independent T-Tests** (α 
 | **H3** | High oil prices drive EV sales. | **Rejected** (p = 0.59) |
 | **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Confirmed** (Sales significantly higher post-tariff, p < 0.001) |
 
+### Visualizing the Hypothesis (Correlation Heatmap)
+To visually confirm relationships between variables (such as GDP and EV Sales), we generated a correlation heatmap:
+
+![Correlation Heatmap](heatmap.png)
 ---
 
 ## Machine Learning Models
