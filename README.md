@@ -84,6 +84,7 @@ The dataset was enriched with **Feature Engineering** — adding historical sale
 All four models were ranked across every metric. **Random Forest** is the clear winner on all measures:
 
 Below are the visual comparisons of the models' accuracy and the key drivers behind the Random Forest predictions. (From `Machine_Learning_Modeling.ipynb`)
+
 **1. Model Accuracy (MAPE)**
 ![Model Accuracy - MAPE](C1.png)
 
