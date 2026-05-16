@@ -83,12 +83,12 @@ The dataset was enriched with **Feature Engineering** — adding historical sale
 
 All four models were ranked across every metric. **Random Forest** is the clear winner on all measures:
 
-| Model | RMSE (Vehicles) | MAE (Vehicles) | R² | MAPE (%) |
-|:---|---:|---:|---:|---:|
-| **Random Forest** | **26,912** | **20,463** | **0.10** | **19.53%** |
-| Decision Tree | 28,217 | 21,859 | 0.01 | 20.93% |
-| kNN | 29,432 | 23,247 | -0.08 | 22.45% |
-| Linear Regression | 36,416 | 28,357 | -0.65 | 28.79% |
+Below are the visual comparisons of the models' accuracy and the key drivers behind the Random Forest predictions. (From `Machine_Learning_Modeling.ipynb`)
+**1. Model Accuracy (MAPE)**
+![Model Accuracy - MAPE](C1.png)
+
+**2. Feature Importance (Random Forest)**
+![Feature Importance](C2.png)
 
 **RMSE & MAE** are in vehicle units. **R² > 0** means the model beats a mean-only baseline. **MAPE** gives an intuitive percentage error of the model.
 
