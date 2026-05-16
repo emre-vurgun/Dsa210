@@ -60,6 +60,18 @@ Evaluated using **Pearson Correlation** and **Welch's Independent T-Tests** (α 
 | **H3** | High oil prices drive EV sales. | **Rejected** (p = 0.59) |
 | **H4** | Mean EV sales differ significantly after the May 2024 tariffs. | **Confirmed** (Sales significantly higher post-tariff, p < 0.001) |
 
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+fig, ax = plt.subplots(figsize=(8, 6))
+corr = df_norm.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5, ax=ax)
+
+ax.set_title('Correlation Heatmap', fontsize=16)
+plt.tight_layout()
+plt.show()
+```
 ---
 
 ## Machine Learning Models
