@@ -88,10 +88,10 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 **1. Model Accuracy (MAPE)**
 ![Model Accuracy - MAPE](C1.png)
 
+ **MAPE** gives an intuitive percentage error of the model.
+ 
 **2. Feature Importance (Random Forest)**
 ![Feature Importance](C2.png)
-
-**RMSE & MAE** are in vehicle units. **R² > 0** means the model beats a mean-only baseline. **MAPE** gives an intuitive percentage error of the model.
 
 ---
 
