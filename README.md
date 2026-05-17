@@ -38,7 +38,10 @@ All data collection, exploratory data analysis, hypothesis testing, and machine 
 - Overlaid time-series plots comparing normalised sales, oil prices, and search trends.
 - Pearson correlation heatmaps across all features.
 - Box-plots to evaluate EV sales distributions before and after the May 2024 tariffs.
-
+  
+**3. Machine Learning Modeling**
+- This project was developed to apply foundational machine learning techniques, treating the historical monthly data as cross-sectional observations by training four regression models: **Linear Regression, k-Nearest Neighbors (kNN), Decision Trees, and Random Forest**.
+- Compared model performance using Mean Absolute Percentage Error (MAPE) to evaluate how heavily external factors—like Oil Prices, GDP, and Tariffs—weigh against standard adoption momentum.
 ---
 
 ## Hypothesis Testing
