@@ -1,4 +1,10 @@
 # Analysis of EV Sales in the US
+## Motivation 
+Growing global energy crises, geopolitical conflicts, and fluctuations in oil prices have significantly affected the transportation and energy sectors in recent years. As someone who has always been interested in cars and automotive technologies, I became curious about whether rising oil prices are actually encouraging people to adopt electric vehicles (EVs), or whether the relationship is weaker than commonly assumed.
+
+This project aims to investigate the relationship between oil prices and EV adoption in the United States by combining economic indicators, income data, and Google search trends. I chose to focus specifically on the U.S. because of the availability of reliable and comprehensive datasets, as well as the ability to better control external factors that may influence consumer behavior.
+
+Through this analysis, I hope to better understand how modern energy and oil crises influence consumer decisions regarding electric vehicle purchases.
 
 ## Data Sources
 
