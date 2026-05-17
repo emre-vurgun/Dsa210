@@ -104,7 +104,7 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 
 ---
 
-###  Findings:
+###  Summary of Conclusions:
 
 **1. GDP per Capita is the dominant driver of EV adoption**
 The strongest finding of this project is the near-perfect correlation between 
