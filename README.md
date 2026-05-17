@@ -100,6 +100,48 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 
 ---
 
+## Key Findings
+
+**1. GDP per Capita is the dominant driver of EV adoption**
+The strongest finding of this project is the near-perfect correlation between 
+GDP per Capita and EV sales (r = 0.916, p < 0.001). This suggests that EV 
+adoption in the US is fundamentally a wealth-driven phenomenon — consumers 
+need sufficient disposable income before an EV purchase becomes a realistic 
+option. This was further confirmed by the Random Forest feature importance 
+analysis, where GDP per Capita accounted for ~44% of predictive power, 
+dwarfing every other variable.
+
+**2. Oil prices do not drive EV purchases — the popular assumption is wrong**
+Despite widespread belief that high fuel costs push consumers toward EVs, 
+oil prices showed virtually no correlation with EV sales (r = 0.04, p = 0.59). 
+This is one of the most counterintuitive results of the analysis. A plausible 
+explanation is that US consumers treat EV purchases as a long-term lifestyle 
+or status decision rather than a short-term reaction to fuel prices.
+
+**3. Public interest (Google Search Trends) reflects but does not lead sales**
+Search volume for "electric car" showed a strong correlation with EV sales 
+(r = 0.734), but its feature importance in the Random Forest model was 
+negligible (~1.5%). This implies that search trends move together with sales 
+rather than predicting them — consumer curiosity and purchasing behavior 
+appear to rise in parallel, driven by the same underlying economic conditions.
+
+**4. Recent sales momentum is a stronger short-term predictor than any 
+macroeconomic variable**
+After adding lag features (sales_lag1, sales_lag3, sales_lag12), Random Forest 
+R² became +0.10 and MAPE became less than 20%. The 3-month 
+lag alone contributed ~22% of feature importance. This reveals that in a 
+rapidly growing market, what happened last quarter is more predictive of 
+next quarter than broader economic signals.
+
+**5. The 2024 tariff period coincides with a structural shift in sales**
+EV sales were significantly higher in the post-May 2024 tariff period 
+(Welch's T-test, p < 0.001). While the tariff (r = 0.63 with sales) is 
+correlated, causation cannot be established — the sales increase likely 
+reflects a combination of market maturation, the Inflation Reduction Act 
+incentives, and new model launches rather than the tariff alone.
+
+---
+
 ## Limitations & Future Work
 
 - GDP data is quarterly; linear interpolation introduces artificial smoothness.
