@@ -24,11 +24,9 @@ This project integrates multiple heterogeneous datasets covering **2010–2026**
 
 ---
 
-## Detailed Analysis & Code
+## Data Analysis Pipeline
 
 All data collection, exploratory data analysis, hypothesis testing, and machine learning models are fully documented in the notebooks.
-
-### Data Analysis Pipeline
 
 **1. Data Preparation**
 - Formatted various date strings into standardised `datetime` objects.
@@ -73,9 +71,11 @@ The dataset was enriched with **Feature Engineering** — adding historical sale
 
 ---
 
-## Results Summary
+## Key Findings
 
-All four models were ranked across every metric. **Random Forest** is the clear winner on all measures:
+### Results Summary
+
+All four models were ranked across every metric. Random Forest leads on all measures — though it is worth noting that an R² of 0.10 reflects the inherent unpredictability of a fast-growing market, where unmodelled factors such as new vehicle launches and federal incentives still drive significant variance.
 
 Below are the visual comparisons of the models' accuracy and the key drivers behind the Random Forest predictions. (From `Machine_Learning_Modeling.ipynb`)
 
@@ -89,7 +89,7 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 
 ---
 
-## Results & Interpretation
+### Interpretation
 
 - **The Time-Series Breakthrough:** Adding historical sales lags resolved the "extrapolation flatline" in tree models. Random Forest went from negative R² to **+0.10**, and MAPE dropped below 20%.
 
@@ -101,7 +101,7 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 
 ---
 
-## Key Findings
+### Findings:
 
 **1. GDP per Capita is the dominant driver of EV adoption**
 The strongest finding of this project is the near-perfect correlation between 
