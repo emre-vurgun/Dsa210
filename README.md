@@ -18,7 +18,7 @@ This project integrates multiple heterogeneous datasets covering **2010–2026**
 
 **3. US GDP per Capita:** Source is Federal Reserve Economic Data (FRED - A939RX0Q048SBEA), to represent consumer purchasing power and economic health.
 
-**4. Public Interest (Google Trends):** Source is Google Trends and the the keywords that is searched: "electric car" (US Region)
+**4. Public Interest (Google Trends):** Source is Google Trends and the keyword searched: "electric car" (US Region)
 
 **5. US Tariff Policy:** Source is US Policy Announcements and it represented as binary dummy variable — 1 after May 2024 (100% tariff on Chinese EV imports).
 
