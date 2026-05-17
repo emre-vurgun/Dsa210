@@ -12,15 +12,15 @@ To collect electric vehicle sales data in the United States, I conducted several
 
 This project integrates multiple heterogeneous datasets covering **2010–2026**, aligned temporally into a monthly format:
 
-**1. US EV Sales (BEV + PHEV): ** Source is Argonne National Laboratory for the Total EV Sales (Battery Electric + Plug-in Hybrid)
+**1. US EV Sales (BEV + PHEV):** Source is Argonne National Laboratory for the Total EV Sales (Battery Electric + Plug-in Hybrid)
 
-**2. Crude Oil Prices (WTI): ** Source is Yahoo Finance API (`yfinance`) to find the monthly closing prices for WTI Crude Oil.
+**2. Crude Oil Prices (WTI):** Source is Yahoo Finance API (`yfinance`) to find the monthly closing prices for WTI Crude Oil.
 
 **3. US GDP per Capita:** Source is Federal Reserve Economic Data (FRED - A939RX0Q048SBEA), to represent consumer purchasing power and economic health.
 
-**4. Public Interest (Google Trends): ** Source is Google Trends and the the keywords that is searched: "electric car" (US Region)
+**4. Public Interest (Google Trends):** Source is Google Trends and the the keywords that is searched: "electric car" (US Region)
 
-**5. US Tariff Policy: ** Source is US Policy Announcements and it represented as binary dummy variable — 1 after May 2024 (100% tariff on Chinese EV imports).
+**5. US Tariff Policy:** Source is US Policy Announcements and it represented as binary dummy variable — 1 after May 2024 (100% tariff on Chinese EV imports).
 
 ---
 
