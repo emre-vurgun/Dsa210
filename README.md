@@ -6,7 +6,9 @@ This project aims to investigate the relationship between oil prices and EV adop
 
 Through this analysis, I hope to better understand how modern energy and oil crises influence consumer decisions regarding electric vehicle purchases.
 
-## Data Sources
+## Data Collection and Sources
+
+To collect electric vehicle sales data in the United States, I conducted several Google searches and found EV sales reports published by Argonne National Laboratory. The dataset was provided in PDF format and categorized into different classes of electric vehicles. For this project, I specifically used BEV (Battery Electric Vehicle) and PHEV (Plug-in Hybrid Electric Vehicle) sales data. For oil price data, I used a Python library connected to Yahoo Finance to access historical market data. GDP data was collected separately from FRED through Python as well. In addition, I used Google Trends to collect public interest data by analyzing how frequently the term “electric car” was searched over time. Finally, based on the feedback I received on my project proposal, I added a dummy variable to separate the periods before and after the tariffs imposed by the United States on Chinese electric vehicles. This allowed me to examine whether the policy change had any measurable effect on EV sales behavior.
 
 This project integrates multiple heterogeneous datasets covering **2010–2026**, aligned temporally into a monthly format:
 
