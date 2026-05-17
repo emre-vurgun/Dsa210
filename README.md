@@ -132,4 +132,8 @@ US_EV_Sales_Analysis/
 │   └── Total Sales for Website_February 2026.pdf
 ├── DSA210 Proposal Document.pdf
 ├── README.md
+├── C1.png
+├── C2.png
+├── heatmap.png
 └── requirements.txt
+
