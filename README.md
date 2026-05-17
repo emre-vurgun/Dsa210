@@ -73,7 +73,7 @@ The dataset was enriched with **Feature Engineering** — adding historical sale
 
 ## Key Findings
 
-### Results Summary
+### Results
 
 All four models were ranked across every metric. Random Forest leads on all measures — though it is worth noting that an R² of 0.10 reflects the inherent unpredictability of a fast-growing market, where unmodelled factors such as new vehicle launches and federal incentives still drive significant variance.
 
@@ -101,7 +101,7 @@ Below are the visual comparisons of the models' accuracy and the key drivers beh
 
 ---
 
-### Findings:
+###  Findings Summary:
 
 **1. GDP per Capita is the dominant driver of EV adoption**
 The strongest finding of this project is the near-perfect correlation between 
