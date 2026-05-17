@@ -150,7 +150,24 @@ incentives, and new model launches rather than the tariff alone.
 - Precise monthly policy data (e.g., federal tax credits claimed per month) could explain the residual error.
 
 ---
+## How to Run
 
+1. Clone the repository:
+https://github.com/emre-vurgun/Dsa210
+
+2. Create and activate environment (python)
+
+3.   Install dependencies (requirements.txt)
+
+4.   Run the notebooks in order:
+   - Start with `Data_collection_EDA_HypothesisTests.ipynb` — this fetches 
+     live oil price and GDP data, so an internet connection is required.
+   - Then run `Machine_Learning_Modeling.ipynb` — this uses the processed 
+     data to train models and generate all charts.
+
+Note:  `ev_sales.csv` and `multiTimeline.csv` are already included 
+
+   
 ## Project Structure
 
 ```text
