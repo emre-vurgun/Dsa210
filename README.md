@@ -169,9 +169,17 @@ https://github.com/emre-vurgun/Dsa210
    - Then run `Machine_Learning_Modeling.ipynb` — this uses the processed 
      data to train models and generate all charts.
 
-Note:  `ev_sales.csv` and `multiTimeline.csv` are already included 
+Note:  `ev_sales.csv` and `multiTimeline.csv` are already included. 
 
-   
+---
+
+## AI Usage Disclosure
+I used AI tools (Gemini) for:
+- Debugging Python code .
+- Reviewing the grammar, flow, and structural formatting of this README file.
+- Brainstorming approaches for structuring time-dependent data and refining data preparation decisions.
+
+---
 ## Project Structure
 
 ```text
